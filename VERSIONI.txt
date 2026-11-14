@@ -1,0 +1,1 @@
+1.05 - Versione attuale: tornei multipli, categorie, squadre con logo, gironi (manuali/casuali), calendario, classifiche, fase finale, sezioni Campi (mappa con scritte) e Regole, area admin, logo caricabile, versione visibile all'admin e notifica di aggiornamento.
