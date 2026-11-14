@@ -39,4 +39,6 @@ GUIDA FIREBASE (versione 1.07) - piano gratuito "Spark", nessuna carta richiesta
 NOTE
    - I valori di firebase-config.js non sono segreti: la sicurezza è garantita dalle regole del punto 5.
    - Il piano gratuito (50.000 letture al giorno) è ampio per un torneo in casa.
-   - Se perdi la password admin, si può reimpostare dalla console Firebase (Authentication > Utenti).
+   - Se perdi la password admin: in Firebase elimina l'utente (Authentication > Utenti) e il documento meta/admin
+     (Firestore Database > Dati > meta > admin), poi ricrea l'admin dall'app. I dati del torneo restano.
+   - Nome utente e password dell'admin non sono email vere: non esiste recupero automatico, annotali.

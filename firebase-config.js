@@ -1,4 +1,4 @@
-export default {
+export const firebaseConfig = {
   apiKey: "AIzaSyC_IeOoRDIMWweoAsS3TsNvyme4VFHN-3I",
   authDomain: "torneo-maggio.firebaseapp.com",
   projectId: "torneo-maggio",

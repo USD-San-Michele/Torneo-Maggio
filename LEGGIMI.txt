@@ -8,7 +8,7 @@ Dalla versione 1.07 i dati sono su Firebase: segui GUIDA-FIREBASE.txt prima di p
 
 VERSIONI E AGGIORNAMENTI
 - La versione attuale è scritta nel nome dello zip, in version.json e dentro index.html (APP_VERSION). L'admin la vede in Gestione > Impostazioni.
-- Ad ogni modifica la versione sale di 0.01 (1.07 > 1.08 > 1.09...).
+- Ad ogni modifica la versione sale di 0.01 (1.08 > 1.09 > 1.10...).
 - Quando carichi su GitHub una versione nuova, tutti gli utenti vedono la notifica "Nuova versione disponibile" con il pulsante Aggiorna.
 - Per pubblicare un aggiornamento sostituisci su GitHub almeno index.html, sw.js e version.json (NON sovrascrivere firebase-config.js) (ultimo, per far partire la notifica).
 
