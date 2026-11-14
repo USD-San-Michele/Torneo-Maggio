@@ -1,21 +1,16 @@
 PUBBLICARE SU GITHUB PAGES
-1. Crea un repository su GitHub e carica TUTTO il contenuto di questa cartella (index.html, manifest.json, sw.js, data.json, cartella icons).
+1. Crea un repository su GitHub e carica TUTTO il contenuto di questa cartella (index.html, manifest.json, sw.js, cartella icons).
 2. Settings > Pages > Source: "Deploy from a branch" > branch main, cartella /root > Save.
 3. Apri l'indirizzo https://TUONOME.github.io/NOMEREPO/ (da telefono: "Aggiungi a schermata Home" per installarla).
 
-COME FUNZIONANO I DATI (importante)
-- Non c'è un server: l'admin modifica i dati sul proprio dispositivo.
-- Per farli vedere a tutti: Area personale > Gestione > Impostazioni > "Scarica data.json",
-  poi su GitHub sostituisci il file data.json nel repository (Add file > Upload files). Dopo 1-2 minuti tutti vedono gli aggiornamenti.
-- La prima volta crei l'account admin (tocca l'omino). Scarica e carica subito data.json,
-  così l'account vale anche da altri dispositivi.
-- Fai sempre l'accesso admin dallo stesso dispositivo, oppure importa data.json prima di modificare.
+DATI ONLINE
+Dalla versione 1.07 i dati sono su Firebase: segui GUIDA-FIREBASE.txt prima di pubblicare il sito.
 
 VERSIONI E AGGIORNAMENTI
 - La versione attuale è scritta nel nome dello zip, in version.json e dentro index.html (APP_VERSION). L'admin la vede in Gestione > Impostazioni.
-- Ad ogni modifica la versione sale di 0.01 (1.05 > 1.06 > 1.07...).
+- Ad ogni modifica la versione sale di 0.01 (1.07 > 1.08 > 1.09...).
 - Quando carichi su GitHub una versione nuova, tutti gli utenti vedono la notifica "Nuova versione disponibile" con il pulsante Aggiorna.
-- Per pubblicare un aggiornamento sostituisci su GitHub almeno index.html, sw.js e version.json (ultimo, per far partire la notifica).
+- Per pubblicare un aggiornamento sostituisci su GitHub almeno index.html, sw.js e version.json (NON sovrascrivere firebase-config.js) (ultimo, per far partire la notifica).
 
 LOGO
 Carica il logo da Area personale > Gestione > Impostazioni > Carica logo.

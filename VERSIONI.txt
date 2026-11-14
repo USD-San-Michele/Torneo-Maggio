@@ -1,1 +1,3 @@
 1.05 - Versione attuale: tornei multipli, categorie, squadre con logo, gironi (manuali/casuali), calendario, classifiche, fase finale, sezioni Campi (mappa con scritte) e Regole, area admin, logo caricabile, versione visibile all'admin e notifica di aggiornamento.
+1.06 - Pulsante 'Installa l'app' (collegamento sul desktop del PC e icona nella schermata Home del telefono); l'icona dell'app è il logo caricato dall'admin.
+1.07 - Dati online su Firebase (Firestore + Authentication): aggiornamenti in tempo reale per tutti, account admin con password protetta, backup/ripristino, lettura offline.

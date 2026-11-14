@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null
+        && exists(/databases/$(database)/documents/meta/admin)
+        && get(/databases/$(database)/documents/meta/admin).data.uid == request.auth.uid;
+    }
+    // L'account admin si crea una sola volta; poi solo l'admin può modificarlo.
+    match /meta/admin {
+      allow read: if true;
+      allow create: if request.auth != null && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if isAdmin();
+    }
+    // Tutti leggono, solo l'admin scrive.
+    match /{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}
